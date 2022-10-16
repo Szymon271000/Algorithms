@@ -13,11 +13,20 @@ static bool CzyPierwsza(int liczba)
     return true;
 }
 
+
 List<int> firstNumbers = new List<int>();
 Eratosthenes eratosthenes = new Eratosthenes(firstNumbers);
-int n = int.Parse(Console.ReadLine());
-eratosthenes.CheckAndShowingFirstNumbers(n);
-Console.WriteLine("-------------------------------");
-eratosthenes.CreatingAndShowingPairs();
-Console.WriteLine("-------------------------------");
-eratosthenes.CreatingAndShowingQUarters();
+//int n = int.Parse(Console.ReadLine());
+//eratosthenes.CheckAndShowingFirstNumbers(n);
+//Console.WriteLine("-------------------------------");
+//eratosthenes.CreatingAndShowingPairs();
+//Console.WriteLine("-------------------------------");
+//eratosthenes.CreatingAndShowingQUarters();
+
+
+int a = int.Parse(Console.ReadLine());
+int b = int.Parse(Console.ReadLine());
+int c = int.Parse(Console.ReadLine());
+int d = int.Parse(Console.ReadLine());
+Cubic cubic = new Cubic(a, b, c, d);
+cubic.Calculate(cubic.A,cubic.B,cubic.C,cubic.D);
