@@ -29,4 +29,8 @@ int b = int.Parse(Console.ReadLine());
 int c = int.Parse(Console.ReadLine());
 int d = int.Parse(Console.ReadLine());
 Cubic cubic = new Cubic(a, b, c, d);
-cubic.Calculate(cubic.A,cubic.B,cubic.C,cubic.D);
+cubic.Calculate(cubic.A, cubic.B, cubic.C, cubic.D);
+
+//FifthGrade fifthGrade = new FifthGrade(5,2,3,4,2,5);
+//double result = fifthGrade.Calculate(-1000, 1000, 0.000001);
+//Console.WriteLine(result);

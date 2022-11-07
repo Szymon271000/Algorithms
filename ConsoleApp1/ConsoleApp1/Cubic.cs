@@ -25,7 +25,7 @@ namespace ConsoleApp1
         {
             if (a > 0)
             {
-                double w = (b / (3 * a)) * -1;
+                double w = (b / (3.0 * a)) * -1;
                 double p = (3 * a * (Math.Pow(w, 2)) + (2 * b * w) + c) / a;
                 double q = (a * (Math.Pow(w, 3)) + (b * Math.Pow(w, 2)) + (c * w) + d) / a;
                 double delta = (Math.Pow(q, 2) / 4) + (Math.Pow(p, 3) / 27);
@@ -41,16 +41,14 @@ namespace ConsoleApp1
                     double x1 = u + v + w;
 
                     double Rex2 = ((u + v) / (-2)) + w;
-                    double Rex3 = ((u + v) / (2)) + w;
+                    double Rex3 = ((u + v) / (-2)) + w;
 
                     double Jm2 = ((Math.Sqrt(3) / 2) * (u - v));
                     double Jm3 = (-1 * ((Math.Sqrt(3) / 2)) * (u - v));
 
                     Console.WriteLine(x1);
-                    Console.WriteLine(Rex2);
-                    Console.WriteLine(Rex3);
-                    Console.WriteLine(Jm2);
-                    Console.WriteLine(Jm3);
+                    Console.WriteLine("re: " + Rex2 + " " + Jm2);
+                    Console.WriteLine("re: " + Rex3 + " " + Jm3);
                 }
                 else if (delta == 0)
                 {
